@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navpap.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <h1>Tip calculator</h1>
+            <p>How much was your bill?</p>
+            <input type="number" id="bill" name="bill">
+            <p>How was your service?</p>
+            <select name="service" id="service">
+                <option value="30"> 30% - Outstanding</option>
+                <option value="20"> 20% - Good</option>
+                <option value="15"> 15% - It was OK</option>
+                <option value="10"> 10% - Bad</option>
+                <option value="5"> 5% - Terrible</option>
+            </select>
+            <p>How many people are sharing the bill?</p>
+            <input type="number" id="peopNum" name="people">
+            <div class="divFBtn"><button id="calculate">Calculate</button></div>
+            <div class="tipAndResult">
+                <p id="tip">Tip amount:</p>
+                <span id="result"></span>
+                <span id="each">  each</span>
+            </div>
+        </div>
+    </div>
+    <script src="navpap.js"></script>
+</body>
+</html>
